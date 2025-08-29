@@ -1,3 +1,4 @@
+
 @property --shine-gap {
     syntax: "<length>";
     inherits: true;
@@ -133,6 +134,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
         mask-image: linear-gradient(to bottom, transparent 0%, black 75%);
         border-bottom-left-radius: var(--shine-radius);
         z-index: 0;
+        pointer-events: none;
     }
 
     .container__37e49 {
@@ -243,6 +245,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
         backdrop-filter: blur(8px);
         z-index: 0;
         mask-image: linear-gradient(to top, black 20px, transparent);
+        pointer-events: none;
     }
 
     &:not(:has(.typing_b88801))::before {
@@ -361,6 +364,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
     pointer-events: none;
     box-sizing: border-box;
     border-right: var(--custom-guild-list-width) solid rgba(255, 255, 255, 0.1);
+    
 }
 
 
@@ -548,6 +552,7 @@ a.link__2ea32 {
         backdrop-filter: blur(18px);
         mask-image: linear-gradient(to top, transparent 0%, black 100%);
         z-index: 0;
+        pointer-events: none;
     }
 
     &::before {
@@ -561,6 +566,7 @@ a.link__2ea32 {
         backdrop-filter: blur(18px);
         mask-image: linear-gradient(to top, transparent 0%, black 100%);
         z-index: 0;
+        pointer-events: none;
     }
 
     .title_f75fb0 {
