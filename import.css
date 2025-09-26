@@ -916,3 +916,16 @@ div:has(>.headerRow_f369db) {
     background: transparent;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.scrollerSpacer__36d07 {
+height: 8px;
+}
+
+.channelBottomBarArea_f75fb0 {
+    margin-bottom: 16px;
+}
+.typing_b88801 {
+    /* position: relative; */
+    bottom: 0px!important;
+    top: unset!important;
+}
