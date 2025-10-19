@@ -1,5 +1,4 @@
 
-@import url('https://bossdaily.github.io/liquid-glass-discord/src/filter.svg'); 
 
 
 @property --shine-gap {
@@ -98,6 +97,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
 :root {
     --custom-app-top-bar-height: 40px;
     --status-danger: #FC3535 !important;
+    --filter-turbulence: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="turbulence" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"><feTurbulence type="turbulence" baseFrequency="0.015 0.015" numOctaves="1" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"/><feDisplacementMap in="SourceGraphic" in2="turbulence" scale="20" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap"/></filter></svg>#turbulence');
 }
 
 .theme-dark {
@@ -133,7 +133,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
         bottom: 0px;
         width: 100%;
         height: 150%;
-        backdrop-filter: url(#turbulence) blur(5px);
+        backdrop-filter: var(--filter-turbulence) blur(5px);
         mask-image: linear-gradient(to bottom, transparent 0%, black 75%);
         border-bottom-left-radius: var(--shine-radius);
         z-index: 0;
@@ -391,6 +391,8 @@ div[style="height: 84px;"][aria-hidden="true"] {
 .title_f75fb0 {
     z-index: unset;
     background: transparent !important;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: (url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="turbulence" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"><feTurbulence type="turbulence" baseFrequency="0.015 0.015" numOctaves="1" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"/><feDisplacementMap in="SourceGraphic" in2="turbulence" scale="20" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap"/></filter></svg>#turbulence') blur(5px));
     border: 0;
 }
 
@@ -645,7 +647,7 @@ a.link__2ea32 {
     box-shadow: 0 -1.5px 0.4px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset;
     background: rgba(161, 161, 161, 0.08);
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: url(#turbulence) blur(5px);
+    backdrop-filter: var(--filter-turbulence) blur(5px);
     width: fit-content;
     flex: 0;
     justify-self: center;
