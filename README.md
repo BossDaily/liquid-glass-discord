@@ -31,8 +31,8 @@ deps:
 - nodejs
 - npm
 ```
-git clone https://github.com/Blade04208/shine.git
-cd shine
+git clone https://github.com/BossDaily/liquid-glass-discord.git
+cd liquid-glass-discord
 npm i
 npm start
 ```
