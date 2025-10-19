@@ -1,4 +1,7 @@
 
+@import url('https://bossdaily.github.io/liquid-glass-discord/src/filter.svg'); 
+
+
 @property --shine-gap {
     syntax: "<length>";
     inherits: true;
@@ -130,7 +133,7 @@ div[style="height: 84px;"][aria-hidden="true"] {
         bottom: 0px;
         width: 100%;
         height: 150%;
-        backdrop-filter: blur(18px);
+        backdrop-filter: url(#turbulence) blur(5px);
         mask-image: linear-gradient(to bottom, transparent 0%, black 75%);
         border-bottom-left-radius: var(--shine-radius);
         z-index: 0;
@@ -210,7 +213,8 @@ div[style="height: 84px;"][aria-hidden="true"] {
     background: rgba(255, 255, 255, 0.04);
     background-blend-mode: plus-lighter;
     box-shadow: 0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset, 0 0.5px 1px 0 rgba(255, 255, 255, 0.30) inset, 0 1px 2px 0 rgba(255, 255, 255, 0.20) inset, 0 2px 12px 0 rgba(0, 0, 0, 0.20) !important;
-    backdrop-filter: blur(8px) brightness(115%) saturate(150%) sepia(20%);
+    backdrop-filter: url(#turbulence) blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border: 0px !important;
 }
 
@@ -242,7 +246,8 @@ div[style="height: 84px;"][aria-hidden="true"] {
         bottom: 0px;
         width: 100%;
         height: 150%;
-        backdrop-filter: blur(8px);
+        backdrop-filter: url(#turbulence) blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         z-index: 0;
         mask-image: linear-gradient(to top, black 20px, transparent);
         pointer-events: none;
@@ -639,7 +644,8 @@ a.link__2ea32 {
     z-index: 200;
     box-shadow: 0 -1.5px 0.4px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset;
     background: rgba(161, 161, 161, 0.08);
-    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: url(#turbulence) blur(5px);
     width: fit-content;
     flex: 0;
     justify-self: center;
@@ -674,7 +680,8 @@ a.link__2ea32 {
     z-index: 200;
     box-shadow: 0 -1.5px 0.4px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset;
     background: color-mix(in oklab, var(--brand-700), transparent 85%);
-    backdrop-filter: blur(16px);
+    backdrop-filter: url(#turbulence) blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: fit-content;
     flex: 0;
     align-self: center !important;
