@@ -1,4 +1,4 @@
-# Shine
+# Liquid Glass Discord Theme
 Glossy, glassy theme based on [a twitter design.](https://x.com/zeealeid/status/1956781061116928462?)
 
 ![GitHub License](https://img.shields.io/github/license/blade04208/shine?style=flat-square)
@@ -6,7 +6,7 @@ Glossy, glassy theme based on [a twitter design.](https://x.com/zeealeid/status/
  
 ![screenshot of shine](./src/thumb.png)|
 
-Original design made by [@zeealeid](https://github.com/zeealeid)
+Original design made by [@zeealeid](https://x.com/zeealeid/status/1956781061116928462/photo/1)
 
 
 ## Installation
